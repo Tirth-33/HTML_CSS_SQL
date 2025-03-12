@@ -1,0 +1,18 @@
+1. SELECT sum(pro_price) FROM product1
+
+2. SELECT avg(pro_price) FROM product1
+
+3. SELECT * FROM product1 ORDER BY pro_id ASC LIMIT 2
+
+4. SELECT * FROM product1 LIMIT 2
+
+5. SELECT * FROM product1 ORDER BY pro_id DESC LIMIT 2
+
+6. INSERT into sub_products (sub_name, pro_id) VALUES ("Mouse", "3")
+
+7. alter TABLE product1 add FOREIGN key(sub_id) REFERENCES sub_products(pro_id)
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Lec-3 Rev Form 01</title>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td><input placeholder="Enter Name" type="text" required pattern="[a-z A-Z]{2,7}" title="Min 2 and Max 7 Letter Only"></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td>
+                    <select>
+                        <option hidden>---Select Country---</option>
+                        <option selected>India</option>
+                        <option disabled>Pakistan</option>
+                        <option>Bangladesh</option>
+                        <option>Sri Lanka</option>
+                    </select>
+                    <select>
+                        <option hidden>---Select State---</option>
+                        <option selected>Gujarat</option>
+                        <option>Rajasthan</option>
+                        <option>Maharastra</option>
+                        <option>Punjab</option>
+                    </select>
+                    <select>
+                        <option hidden>---Select City---</option>
+                        <option selected>Ahmedabad</option>
+                        <option>Gandhinagar</option>
+                        <option>Baroda</option>
+                        <option>Surat</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hidden Field</td>
+                <td><input type="hidden" value="Pass"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="5" cols="49"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" value="hardi2408@gmail.com" readonly></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="text" required pattern="[0-9]{10}" title="10 Digits Only"></td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td><input type="number" max="10" min="1"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" checked name="Gender">Male
+                    <input type="radio" name="Gender"> Female
+                    <input type="radio" name="Gender"> Transgender
+               </td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>
+                    <input type="checkbox" checked name="Languages"> Gujarati
+                    <input type="checkbox" name="Languages"> Hindi
+                    <input type="checkbox" name="Languages"> English
+                    <input type="checkbox" name="Languages"> Marathi
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Images</td>
+                <td>
+                    <input type="file" multiple>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset Value">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

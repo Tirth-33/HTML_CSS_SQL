@@ -1,0 +1,46 @@
+/*.t1,p,a,input
+        {
+            background: orange;
+        }*/
+        .x1
+        {
+            background: yellowgreen;
+        }
+        #t1
+        {
+            background: plum;
+        }
+        #x1
+        {
+            background: violet;
+        }
+        #y1
+        {
+            font-family: cursive;
+        }
+        .x1
+        {
+            color: blue;
+        }
+        #x1
+        {
+            color: whitesmoke;
+        }
+
+        input[type='Submit']
+        {
+            background: red;
+            color: lightblue;
+        }
+        *
+        {
+            color: pink;
+        }
+        div *
+        {       
+            color: chartreuse;
+        }
+        div h1
+        {
+            color: lightcoral !important
+        }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS</title>
+</head>
+<style>
+    div *
+    {
+        color: red;
+    }
+    div h1
+    {
+        color: pink !important
+    }
+</style>
+<link rel="stylesheet" href="External.css">
+<body>
+    <div>
+        <p>Hello</p>
+        <h1 style="color: aquamarine;">Hello H-1</h1>
+        <a href="">Hyperlink</a><hr>
+    </div>
+
+    <input type="text">
+    <input type="submit">
+    <h5 class="t1 x1">Hello Class</h5><!-- Je Class Last Ma Banayo Hase Te j Apply Thase -->
+    <h5 id="x1">Hello ID</h5><!-- Ekaj ID Pass Thase 2 ID Muki Hase to Koi pn Pass Nai Thay -->
+
+    <h4 class="t1" id="x1">Hello Class & ID</h4><!--Ama Khali ID j Pass Thase, Class Nai Thay -->
+
+    <a id="y1" href="">Link</a>
+    <input type="text">
+
+    <h2>Hello Internal 1</h2>
+    <h2 class="t1">Hello Internal 2</h2>
+    <h2 class="x1">Hello Internal 3</h2>
+    <h2 id="x1">Hello Internal 4</h2>
+    <h2 id="y1">Hello Internal 5</h2>
+
+    <p id="y1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel excepturi quo odit ab magni ex dolore impedit pariatur, nobis quis facilis, dolor vero sunt et nam sapiente eaque temporibus.</p>
+</body>
+</html>

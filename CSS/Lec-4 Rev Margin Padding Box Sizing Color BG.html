@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding Box Sizing Color BG</title>
+</head>
+<body>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        .x
+        {
+            background: yellow;
+            height: 150px;
+            width: 150px;
+            border: 3px solid;
+        }
+        .x1
+        {
+            /* Margin Top Right Bottom Left Work Kare For Ex: 0 0 20 50 */
+            margin: 20px;
+            margin-top: 30px;
+            margin-left: 500px;
+            /*margin: auto;*/
+            background-color: skyblue;
+        }
+        .y1
+        {
+            margin-left: 430px;
+            width: 300px;
+            height: auto;
+            padding: 10px;
+            text-align: justify;
+            color: blue;
+            color: #918151; /* Search in Google "hex color code" */
+            color: rgb(100,30,100); /* Number Between 0 to 256 */
+            color: hsl(123, 50%, 40%);
+            box-sizing: border-box; /* Search in Google "hsl color picker" */
+
+            background: linear-gradient(to Bottom,orange, whitesmoke, green); /* To Top, To Right & To Left also Apply */
+            background: linear-gradient(60deg,orange, whitesmoke 60%, green); 
+        }
+        .z1
+        {
+            background: radial-gradient(orange, whitesmoke, green); /* Multiple Color Lai Sakay */
+        }
+    </style>
+    
+</body>
+    <div class="x1 x"></div>
+    <div class="y1 x">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati explicabo maxime sit, impedit molestias, magni provident dicta a dolor corrupti voluptate officia facere quos. Rem ipsa velit quas fuga provident!</div>
+    <div class="x1 x z1"></div>
+</html>
