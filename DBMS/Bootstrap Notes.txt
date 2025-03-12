@@ -1,0 +1,10 @@
+Bootstrap : HTML, CSS, JS Library
+
+Why BT : Build Fast & Responsive Sites
+
+Framework : Both are Pre Written Set of Codes - Can Develop a Whole App.
+
+Library : Both are Pre Written Set of Codes - Used to Perform Specific Task.
+
+
+
