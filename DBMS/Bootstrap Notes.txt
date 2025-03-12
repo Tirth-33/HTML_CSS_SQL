@@ -1,4 +1,4 @@
-Bootstrap : HTML, CSS, JS Library
+Bootstrap : HTML, CSS, JS Libraries
 
 Why BT : Build Fast & Responsive Sites
 
