@@ -1,4 +1,4 @@
-1. SELECT sum(pro_price) FROM product1
+1. SELECT sum(pro_price) FROM products
 
 2. SELECT avg(pro_price) FROM product1
 
