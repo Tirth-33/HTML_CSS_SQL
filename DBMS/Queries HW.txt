@@ -1,0 +1,133 @@
+1. Create a Table
+- create table iplowners (
+    SrNo int AUTO_INCREMENT PRIMARY KEY,
+    TeamName varchar (20),
+    Owners varchar (20),
+    OwnersCompany varchar (30),
+    PurchaseYr int)
+
+2. Add a New Column
+- Alter table iplowners add Coach varchar (20) after TeamName
+
+3. Modify a Column's Data Type
+- ALTER TABLE iplowners MODIFY COLUMN OwnersCompany varchar(50);
+- ALTER TABLE iplplayer MODIFY COLUMN Salary varchar(25);
+
+4. Drop a Column
+- alter TABLE iplowners drop Coach;
+
+5. Add a Unique Constraint
+- ALTER TABLE iplowners ADD CONSTRAINT OwnerName UNIQUE (Owners);
+
+6. Add a Foreign Key 
+- CREATE TABLE players (
+    SrNo INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(30),
+    Country VARCHAR(20),
+    TeamName int,
+    Salary Varchar(20),
+    Role VARCHAR(15),
+    FOREIGN KEY (TeamName) REFERENCES owners(SrNo) ON DELETE CASCADE
+);
+
+7. Drop a Table 
+- Drop TABLE iplplayer
+
+8. Truncate a Table 
+- TRUNCATE table iplplayers
+
+9. Create an Index 
+- CREATE INDEX Idx_EmpName ON employee (EmpName);
+
+10. Drop an Index 
+- DROP INDEX Idx_EmpName ON employee;
+
+E. SHOW INDEX FROM employee;
+
+11. Rename a Table 
+- alter table iplowners Rename OwnersOfIPL / alter table ownersofipl Rename iplowners
+
+12. Add a Default Value 
+- ALTER TABLE ownersofipl MODIFY COLUMN TeamName VARCHAR(50) DEFAULT 'active';
+
+13. Remove a Constraint
+- ALTER TABLE iplowners DROP INDEX OwnerName; / ALTER TABLE iplowners DROP CONSTRAINT OwnerName UNIQUE (Owners)
+
+14. Create a Schema
+- CREATE SCHEMA players
+
+15. Move a Table to a Schema
+- CREATE TABLE players.iplplayers LIKE home_practise.iplowners;
+- INSERT INTO players.iplplayers 
+SELECT * FROM home_practise.iplowners;
+
+-----------------------------------------------------------------------------------------------------------------
+1. Insert a Single Record
+-  INSERT INTO iplowners (TeamName, Owners, OwnersCompany, PurchaseYr)
+VALUES ('Mumbai Indians', 'Mukesh Ambani', 'RIL', '2008')
+
+2. Insert Multiple Records
+- INSERT INTO employee (EmpName, Age, Salary, DeptID)
+VALUES 
+    ('Manisha', '44', '25000', '4'),
+    ('Jigar', '40' ,'44000', '1'),
+    ('Khusali','26', '30000', '7')
+
+3. Update a Single Record
+- UPDATE employee
+SET age = 28
+WHERE EmpID = 10;
+
+4. Update Multiple Records (Learn With Nirav Sir)
+
+
+5. Delete a Single Records
+- DELETE FROM employee WHERE EmpID = 9;
+
+6. Delete Multiple Records
+- DELETE FROM employee WHERE EmpID IN (7, 8, 10);
+
+7. Insert with Default Values
+- INSERT INTO employee (EmpName, Age, Salary, DeptID) VALUES ('Preeti', '26', DEFAULT, 4);
+
+8. Update using Subquery (Learn With Nirav Sir)
+
+9. Delete using Subquery (Learn With Nirav Sir)
+
+10. Insert from another Table (Learn With Nirav Sir)
+
+11. Update with CASE Statement
+- UPDATE employee
+SET salary = CASE
+    WHEN DeptID = 'Anchor' THEN 50000
+    WHEN DeptID = 'Technical' THEN 35000
+    WHEN DeptID = 'PCR' THEN 45000
+    ELSE salary
+END
+WHERE DeptID = 'Admin';
+
+
+12. Delete All Records
+- delete from iplplayers
+
+13. Insert with Auto-Increment
+- create table iplowners (
+    SrNo int AUTO_INCREMENT PRIMARY KEY,
+    TeamName varchar (20),
+    Owners varchar (20),
+    OwnersCompany varchar (30),
+    PurchaseYr int)
+
+14. Update and Reset a Column
+- UPDATE iplplayers (Update)
+SET PurchaseYr = 2010 
+WHERE TeamName = 'Chennai Super Kings';
+
+- UPDATE iplplayers (Reset)
+SET PurchaseYr = NULL 
+WHERE SrNo = 3;
+
+15. Delete with JOIN
+- select Owners, OwnersCompany from Owners
+join players on players.TeamName = Owners.SrNo
+
